@@ -1,6 +1,7 @@
 import React , {useContext, useEffect,useState} from 'react';
 import axios from 'axios';
 import { CartContext } from '../context/CartContext';
+import './Menu.css'; 
 
 const Menu = () => {
     const [menuItems,setMenuItems] = useState([]);
@@ -38,21 +39,27 @@ const Menu = () => {
     };
 
     return (
-        <div>
-          <h2>Menu</h2>
-          {message && <div style = {{color:'green',marginBottom:'5px'}}>{message}</div>}
+        <div className="menu-container">
+          <h2 className="menu-heading">Categorized Menu</h2>
+
+          {message && (<div className="message">{message}</div>)}
+
           {Object.keys(groupedMenu).map(category => (
-            <div key={category}>
-              <h3>{category}</h3>
-              <ul>
+            <div key={category} className="menu-category">
+              <h3 className="category-title">{category}</h3>
+              <ul className="menu-list">
                 {groupedMenu[category].map(item => (
-                  <li key={item._id}>
+                  <li key={item._id} className="menu-item">
+
+                  <div className="menu-item-header">
                     <strong>{item.name}</strong> - ₹{item.price}
-                    <p>{item.description}</p>
+                  </div>
+
+                  <p className="item-description">{item.description}</p>
                     <small>{item.availability ? 'Available' : 'Not Available'}</small>
                     <br/>
 
-                    <button onClick ={ ()=> handleAddToCart(item)}>Add to Cart</button>
+                    <button onClick ={ ()=> handleAddToCart(item)} className="add-button">Add to Cart</button>
                   </li>
                 ))}
               </ul>

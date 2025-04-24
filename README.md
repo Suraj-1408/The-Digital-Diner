@@ -38,6 +38,34 @@ A simple and clean food ordering web application built with React, Node.js, Expr
 
 
 ---
+## User Interface
+
+### Menu Page
+![Menu Page](assets/MenuItemPage.png)
+
+### Adding Menu Item to Cart
+![AddingMenuItem](assets/AddingMenuItem.png)
+
+### Adding Menu Item to Cart
+![AddingMenuItem](assets/AddingMenuItem.png)
+
+### Cart
+![EmptyCart](assets/EmptyCart.png)
+
+### Cart With Items
+![CartWithItems](assets/CartWithItems.png)
+
+
+### Place Order Page
+![Place Order](assets/PlaceOrderPage.png)
+
+### Order History Page
+![OrderHistoryPage](assets/OrderHistoryPage.png)
+
+### Order History Page
+![OrderHistoryPage](assets/OrderHistoryDetails.png)
+
+
 # Start Backend in terminal
 cd Backend
 node index.js

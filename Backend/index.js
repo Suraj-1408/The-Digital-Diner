@@ -5,6 +5,9 @@ const cors = require('cors');
 const connectMongoDB = require('./db/mongo.js');
 const pool = require('./db/postgres.js');
 const menuRoutes = require('./routes/menuRoutes');
+const orderRoutes = require('./routes/orderRoutes');
+
+
 const app = express();
 
 //(important for frontend to talk to backend)
@@ -23,7 +26,7 @@ app.get('/',(req,res) =>{
 
 //API route for menu items
 app.use('/api/menu', menuRoutes);
-
+app.use('/api/orders',orderRoutes);
 
 //allocating port for it.
 const PORT = process.env.PORT || 4000;

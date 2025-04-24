@@ -59,10 +59,14 @@ A simple and clean food ordering web application built with React, Node.js, Expr
 ### Place Order Page
 ![Place Order](assets/PlaceOrderPage.png)
 
+### Successfully Order Placed
+![Place Order](assets/SuccessfullOrderPlacing.png)
+
+
 ### Order History Page
 ![OrderHistoryPage](assets/OrderHistoryPage.png)
 
-### Order History Page
+### Order History Detail
 ![OrderHistoryPage](assets/OrderHistoryDetails.png)
 
 

@@ -1,0 +1,64 @@
+.order-form-container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 25px 30px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .order-form-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .order-form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .order-form-group label {
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  
+  .order-form-group input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .order-form-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0077cc;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .order-form-button:hover {
+    background-color: #005fa3;
+  }
+  
+  .order-form-backlink {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #0077cc;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .order-form-backlink:hover {
+    text-decoration: underline;
+  }
+  

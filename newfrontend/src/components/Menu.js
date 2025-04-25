@@ -4,7 +4,7 @@ import { CartContext } from '../context/CartContext';
 import './Menu.css'; 
 
 const Menu = () => {
-    const [menuItems,setMenuItems] = useState([]);
+    //const [menuItems,setMenuItems] = useState([]);
     const [groupedMenu,setGroupedMenu] = useState({});
     const { addToCart } = useContext(CartContext);    //useing addToCart from context.
     const [message,setMessage] = useState("");      //using this useState to display message when item added

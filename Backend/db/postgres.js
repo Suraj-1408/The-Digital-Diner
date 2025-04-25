@@ -2,9 +2,13 @@ const { Pool } = require('pg');
 require('dotenv').config();  // Load environment variables
 
 
-const pool = new Pool({
-    connectionString: process.env.POSTGRES_URI  // Use the connection string from the .env file
+console.log('Postgres URI:', process.env.POSTGRES_URI);
 
+const pool = new Pool({
+    connectionString: process.env.POSTGRES_URI,
+    ssl: {
+        rejectUnauthorized: false // This will allow the connection even if the certificate isn't verified (not recommended for production)
+    }
 /*
 user:'postgres',
 host:'localhost',

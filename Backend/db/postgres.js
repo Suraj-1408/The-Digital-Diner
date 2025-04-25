@@ -1,12 +1,17 @@
 const { Pool } = require('pg');
+require('dotenv').config();  // Load environment variables
+
 
 const pool = new Pool({
+    connectionString: process.env.POSTGRES_URI  // Use the connection string from the .env file
 
+/*
 user:'postgres',
 host:'localhost',
 database:'digitaldiner',
 password:'12345',
 port:'5432',
+*/
 });
 
 

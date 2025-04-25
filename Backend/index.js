@@ -2,8 +2,10 @@ const  express = require('express');
 const cors = require('cors');
 
 //importing db's
-const connectMongoDB = require('./db/mongo.js');
-const pool = require('./db/postgres.js');
+//const connectMongoDB = require('./db/mongo.js');
+require('./db/mongo.js');
+//const pool = require('./db/postgres.js');
+require('./db/postgres.js');
 const menuRoutes = require('./routes/menuRoutes');
 const orderRoutes = require('./routes/orderRoutes');
 
@@ -11,7 +13,12 @@ const orderRoutes = require('./routes/orderRoutes');
 const app = express();
 
 //(important for frontend to talk to backend)
-app.use(cors());
+//app.use(cors());
+app.use(cors({
+    origin: 'https://exquisite-pastelito-5bd61b.netlify.app', // your frontend URL
+    methods: ['GET', 'POST', 'PUT', 'DELETE'], // optional: specify allowed HTTP methods
+    credentials: true, // optional: if your frontend sends cookies or other credentials
+}));
 
 
 //Middleware to parse JSON

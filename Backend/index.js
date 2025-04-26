@@ -15,7 +15,7 @@ const app = express();
 //(important for frontend to talk to backend)
 //app.use(cors());
 app.use(cors({
-    origin: 'https://digitaldiner-web.netlify.app/', //frontend URL
+    origin: 'https://digitaldiner-web.netlify.app', //frontend URL
     methods: ['GET', 'POST', 'PUT', 'DELETE'], 
     credentials: true, // optional: if your frontend sends cookies or other credentials
 }));

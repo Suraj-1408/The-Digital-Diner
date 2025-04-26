@@ -9,13 +9,13 @@ const OrderForm = () =>{
     const [name,setName] = useState('');
     const [phone,setPhone]  = useState('');
 
-
     const  handleSubmit = async(e) =>{
         e.preventDefault();
 
 
         try{
-            await axios.post('http://localhost:4000/api/orders',{
+           // await axios.post('http://localhost:4000/api/orders',{
+            axios.get('https://the-digital-diner.onrender.com/api/orders',{
                 name,
                 phone,
                 items:cartItems

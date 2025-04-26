@@ -10,7 +10,8 @@ const Menu = () => {
     const [message,setMessage] = useState("");      //using this useState to display message when item added
 
     useEffect(() =>{
-        axios.get('http://localhost:4000/api/menu')
+        //axios.get('http://localhost:4000/api/menu')
+        axios.get('https://the-digital-diner.onrender.com/api/menu')
 
         .then(response =>{
             //setMenuItems(response.data);

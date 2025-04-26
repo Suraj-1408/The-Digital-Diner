@@ -14,7 +14,8 @@ function OrderHistory(){
         }
 
         try{
-            const response = await fetch(`http://localhost:4000/api/orders/${phone}`);
+            //const response = await fetch(`http://localhost:4000/api/orders/${phone}`);
+            const response = await fetch(`https://the-digital-diner.onrender.com/api/orders/${phone}`);
 
             if (!response.ok) {
                 throw new Error("Order not found or server error");

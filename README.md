@@ -120,9 +120,9 @@ cd Backend
 `
 
 ### Similarly create a database digitaldiner in mongodb with collection name as menuitems.  
-1)Inside you mongosb shell create database.       
-` use digitaldiner
-` 
+1)Inside you mongodb shell create database      
+` use digitaldiner 
+`   
 2)Insert records into collection menuitems.(Note - Before inserting record have a look at menu_item model)      
 `
 db.createCollection('menuitems');

@@ -15,7 +15,7 @@ const OrderForm = () =>{
 
         try{
            // await axios.post('http://localhost:4000/api/orders',{
-            axios.get('https://the-digital-diner.onrender.com/api/orders',{
+            axios.post('https://the-digital-diner.onrender.com/api/orders',{
                 name,
                 phone,
                 items:cartItems

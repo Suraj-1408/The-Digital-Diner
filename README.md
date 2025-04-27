@@ -38,6 +38,9 @@ A simple and clean food ordering web application built with React, Node.js, Expr
 
 
 ---
+
+## Project Deployement Link - https://digitaldiner-web.netlify.app/ 
+
 ## User Interface
 
 ### Menu Page
@@ -72,32 +75,32 @@ A simple and clean food ordering web application built with React, Node.js, Expr
 
 # How to run the Application.
 
-### Clone the repository.
+### Clone the repository. 
 `
 git clone https://github.com/Suraj-1408/The-Digital-Diner.git
 cd Backend
 `
 
-# Backend SetUp
-### Navigate to Backend Folder using 
+# Backend SetUp 
+### Navigate to Backend Folder using  
 ` cd Backend `
 
-### Install Dependencies 
+### Install Dependencies  
 ` npm install `
 
-### Create .env file with your database credentials 
+### Create .env file with your database credentials  
 ` DB_URI=postgresql://postgres:password@localhost:5432/digital_diner
   MONGO_URI=mongodb://localhost:27017/digitaldiner
   PORT=4000
 `
 
-### Create database & relations in PostgreSQL
-1)Create database
+### Create database & relations in PostgreSQL 
+1)Create database 
 ` create database digitaldiner;
 \c digitaldiner;
 `
 
-2)Create orders relation
+2)Create orders relation 
 `CREATE TABLE IF NOT EXISTS orders (
     id SERIAL PRIMARY KEY,
     name VARCHAR(100),
@@ -106,7 +109,7 @@ cd Backend
 );
 `
 
-3)Create order_items relation
+3)Create order_items relation 
 `CREATE TABLE IF NOT EXISTS order_items (
     id SERIAL PRIMARY KEY,
     order_id INT REFERENCES orders(id) ON DELETE CASCADE,
@@ -116,32 +119,32 @@ cd Backend
 );
 `
 
-### Similarly create a database digitaldiner in mongodb with collection name as menuitems.
-1)Inside you mongosb shell create database.
+### Similarly create a database digitaldiner in mongodb with collection name as menuitems. 
+1)Inside you mongosb shell create database.    
 `
  use digitaldiner
 `
-2)Insert records into collection menuitems.(Note - Before inserting record have a look at menu_item model)
+2)Insert records into collection menuitems.(Note - Before inserting record have a look at menu_item model)   
 `
 db.createCollection('menuitems');
 db.menuitems.insertMany([...]);
 `
 
-### At Last Execute Backend in one terminal
+### At Last Execute Backend in one terminal   
 `
 node index.js
 `
 
-## Start Frontend in new terminal
-1)Navigate to newfrontend
+## Start Frontend in new terminal   
+1)Navigate to newfrontend  
 ` cd newfrontend
 `
-2) Install Dependencies 
+2) Install Dependencies   
 `
 npm start
 `
 
-3) Execute newfrontend
+3) Execute newfrontend  
 `
   npm start
 `

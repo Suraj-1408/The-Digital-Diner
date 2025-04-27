@@ -41,7 +41,8 @@ const Menu = () => {
 
     return (
         <div className="menu-container">
-          <h2 className="menu-heading">Categorized Menu</h2>
+          <h2 className="menu-heading">Our Menu</h2>
+          <p className="menu-subtext">Browse by category and discover your next favorite dish!</p>
 
           {message && (<div className="message">{message}</div>)}
 
@@ -60,7 +61,7 @@ const Menu = () => {
                     <small>{item.availability ? 'Available' : 'Not Available'}</small>
                     <br/>
 
-                    <button onClick ={ ()=> handleAddToCart(item)} className="add-button">Add to Cart</button>
+                    <button onClick ={ ()=> handleAddToCart(item)} className="add-button">Add to Order</button>
                   </li>
                 ))}
               </ul>

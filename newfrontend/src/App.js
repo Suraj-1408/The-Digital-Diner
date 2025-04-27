@@ -20,9 +20,14 @@ const AppContent = () =>{
       
       {location.pathname !== '/place-order' && (
         <>
-          <h1>Welcome to Digital Diner</h1>
+          <h1 className="main-heading">Welcome to Digital Diner</h1>
+
+          <p className="intro-text">
+            Explore a diverse menu, choose your favorites, and place orders in just few clicks.Order Your Favorite Meals Online,Fast, Easy, Delicious!
+          </p>
+          
           <nav>
-            <Link to="/">Menu</Link> | <Link to="/cart">View Cart</Link> |  <Link to="/order-history">My Orders</Link>
+            <Link to="/">Menu</Link> | <Link to="/cart">View Order</Link> |  <Link to="/order-history">My Orders</Link>
           </nav>
         </>
       )}

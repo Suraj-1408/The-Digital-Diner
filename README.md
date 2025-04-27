@@ -119,32 +119,31 @@ cd Backend
 );
 `
 
-### Similarly create a database digitaldiner in mongodb with collection name as menuitems. 
-1)Inside you mongosb shell create database.    
-`
- use digitaldiner
-`
-2)Insert records into collection menuitems.(Note - Before inserting record have a look at menu_item model)   
+### Similarly create a database digitaldiner in mongodb with collection name as menuitems.  
+1)Inside you mongosb shell create database.       
+` use digitaldiner
+` 
+2)Insert records into collection menuitems.(Note - Before inserting record have a look at menu_item model)      
 `
 db.createCollection('menuitems');
 db.menuitems.insertMany([...]);
 `
 
-### At Last Execute Backend in one terminal   
+### At Last Execute Backend in one terminal     
 `
 node index.js
 `
 
 ## Start Frontend in new terminal   
-1)Navigate to newfrontend  
+1)Navigate to newfrontend    
 ` cd newfrontend
-`
-2) Install Dependencies   
+`  
+2) Install Dependencies     
 `
 npm start
-`
+`  
 
-3) Execute newfrontend  
+3) Execute newfrontend    
 `
   npm start
 `

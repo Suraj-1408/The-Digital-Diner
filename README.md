@@ -1,32 +1,32 @@
-# 🍽️ Digital Diner
+#  Digital Diner
 
 A simple and clean food ordering web application built with React, Node.js, Express, PostgreSQL, and MongoDB.
 
 
-## 🚀 Features Implemented
+##  Features Implemented
 
-### 🧾 Digital Menu
+###  Digital Menu
 - Loads menu from MongoDB
 - Displays item name, description, price
 
-### 🛒 Cart
+###  Cart
 - Add/remove menu items with quantity
 - Calculates total price
 - Clear cart after order placement
 
-### 📦 Place Order
+###  Place Order
 - Enter name and phone number
 - Sends cart data to `/api/orders` via POST
 - Saves to PostgreSQL `orders` and `order_items` tables
 
-### 📖 Order History
+###  Order History
 - Users enter phone number
 - Retrieves past orders with items and totals from PostgreSQL
 - Shows complete history of multiple orders
 
 ---
 
-## ⚙️ Backend APIs
+## ⚙ Backend APIs
 
 **Base URL:** `http://localhost:4000`
 
